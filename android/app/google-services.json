@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279888608643",
+    "firebase_url": "https://travelog-6535c.firebaseio.com",
+    "project_id": "travelog-6535c",
+    "storage_bucket": "travelog-6535c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279888608643:android:2b71bf6b45a0a3bd314ab6",
+        "android_client_info": {
+          "package_name": "com.example.TraveLog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279888608643-f0t4heg07b61c4c2edvtfr4rm90uo1gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOAqs4ZV_SjADcJZAY6nZFqqaxhLwSIDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279888608643-f0t4heg07b61c4c2edvtfr4rm90uo1gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
