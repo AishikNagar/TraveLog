@@ -76,12 +76,20 @@ class _CreateLogState extends State<CreateLog> {
             Text("Trave", style: TextStyle(fontSize: 25)),
             Text(
               "Log",
-              style: TextStyle(color: Colors.blueAccent[100], fontSize: 25),
+              style: TextStyle(color: Colors.black, fontSize: 25),
             )
           ],
         ),
-        backgroundColor: Colors.transparent,
-        elevation: 0.0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(60),
+          ),
+        ),
+        backgroundColor: Colors.blueAccent[100],
+
+        elevation: 3.0,
+        // backgroundColor: Colors.transparent,
+        // elevation: 0.0,
         actions: <Widget>[
           GestureDetector(
             onTap: () {
