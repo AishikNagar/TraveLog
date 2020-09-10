@@ -10,6 +10,6 @@ class CrudMethods {
   }
 
   getData() async {
-    return await FirebaseFirestore.instance.collection("logs").snapshots();
+    return FirebaseFirestore.instance.collection("logs").snapshots();
   }
 }

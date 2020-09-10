@@ -95,20 +95,20 @@ class _CreateLogState extends State<CreateLog> {
       ),
       body: _isLoading
           ? Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/abstract space.jpg"),
-                    fit: BoxFit.cover),
-              ),
+              // decoration: BoxDecoration(
+              //   image: DecorationImage(
+              //       image: AssetImage("assets/abstract space.jpg"),
+              //       fit: BoxFit.cover),
+              // ),
               alignment: Alignment.center,
               child: CircularProgressIndicator(),
             )
           : Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/abstract space.jpg"),
-                    fit: BoxFit.cover),
-              ),
+              // decoration: BoxDecoration(
+              //   image: DecorationImage(
+              //       image: AssetImage("asset`s/abstract space.jpg"),
+              //       fit: BoxFit.cover),
+              // ),
               child: Column(
                 children: <Widget>[
                   SizedBox(

@@ -54,13 +54,15 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    crudMethods.getData().then((result) {
-      setState(() {
-        logsStream = result;
+    super.initState();
+    Firebase.initializeApp().whenComplete(() {
+      print('completed');
+      crudMethods.getData().then((result) {
+        setState(() {
+          logsStream = result;
+        });
       });
     });
-    super.initState();
-    Firebase.initializeApp();
   }
 
   @override
@@ -165,29 +167,3 @@ class LogsTile extends StatelessWidget {
     );
   }
 }
-// class LogsTile extends StatelessWidget {
-
-//   String imgUrl, place, title;
-
-//   LogsTile({@required this.imgUrl,this.title,this.place})
-//   const LogsTile({Key key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       height: 150,
-//       child: Stack(children: <Widget>[
-//         ClipRRect(child: Image.network(imgUrl),borderRadius: BorderRadius.circular(8)),
-//         Container(
-//           height: 150,
-//           decoration: BoxDecoration(color: Colors.black45.withOpacity(0.3),borderRadius: BorderRadius.circular(8)),
-
-//         ),
-//         Container(child: Column(children: <Widget>[
-//           Text(place),
-//           Text(title)
-//         ],),)
-//       ],),
-//     );
-//   }
-// }
